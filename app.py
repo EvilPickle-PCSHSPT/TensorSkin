@@ -31,9 +31,9 @@ def ensemble_predict(test_data):
     test_data = np.true_divide(test_data, 255)
     test_data = np.expand_dims(test_data, axis=0)
 
-    model_1 = tf.keras.models.load_model('model/TensorSkin_model_1.h5')
-    model_2 = tf.keras.models.load_model('model/TensorSkin_model_2.h5')
-    model_3 = tf.keras.models.load_model('model/TensorSkin_model_3.h5')
+    model_1 = tf.keras.models.load_model('model/SkinFine_model_1.h5')
+    model_2 = tf.keras.models.load_model('model/SkinFine_model_2.h5')
+    model_3 = tf.keras.models.load_model('model/SkinFine_model_3.h5')
     ans_1 = model_1.predict(test_data)
     ans_2 = model_2.predict(test_data)
     ans_3 = model_3.predict(test_data)
@@ -72,9 +72,17 @@ def allowed_file(filename):
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-@app.route("/")
-def template_test():
-    return render_template('index.html', label='')
+@app.route('/')
+def index_template():
+    return render_template('home.html')
+
+@app.route('/home')
+def home_template():
+    return render_template('home.html')
+
+@app.route("/predict")
+def predict():
+    return render_template('predict.html', label='')
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
@@ -116,6 +124,10 @@ app.add_url_rule('/upload_folder/<filename>', 'uploaded_file',
 app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
     '/upload_folder':  app.config['UPLOAD_FOLDER']
 })
+
+@app.route('/')
+def  helpus_templat():
+    render_template()
 
 if __name__ == "__main__":
     app.debug=False
