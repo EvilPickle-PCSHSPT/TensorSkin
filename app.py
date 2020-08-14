@@ -99,12 +99,19 @@ def upload_file():
             result = ensemble_predict(file_path)
             if result == 0:
                 label = 'Atopic Dermatitis'
+                cure = 'No need'
+    
             elif result == 1:
                 label =	'Normal'
+                cure = 'No need'
+
             elif result == 2:
                 label = 'Psoriasis'
+                cure = '24 hours'
+
             elif result == 3:
                 label = 'Seborrhoeic Keratosis'
+                cure = '24 hours'
             
             print(result)
             print(file_path)
@@ -112,7 +119,7 @@ def upload_file():
 
             os.rename(file_path, os.path.join(app.config['UPLOAD_FOLDER'], filename))
             print("--- %s seconds ---" % str (time.time() - start_time))
-            return render_template('predict.html', label=label, imagesource='upload_folder/' + filename)
+            return render_template('predict.html', label=label, cure=cure, imagesource='upload_folder/' + filename)
 
 @app.route('/upload_folder/<filename>')
 def uploaded_file(filename):
