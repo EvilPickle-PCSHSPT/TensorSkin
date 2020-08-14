@@ -80,11 +80,11 @@ def index_template():
 def home_template():
     return render_template('home.html')
 
-@app.route("/predict")
+@app.route('/predict')
 def predict():
     return render_template('predict.html', label='')
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         import time
@@ -112,22 +112,25 @@ def upload_file():
 
             os.rename(file_path, os.path.join(app.config['UPLOAD_FOLDER'], filename))
             print("--- %s seconds ---" % str (time.time() - start_time))
-            return render_template('index.html', label=label, imagesource='upload_folder/' + filename)
+            return render_template('predict.html', label=label, imagesource='upload_folder/' + filename)
 
 @app.route('/upload_folder/<filename>')
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
 
-app.add_url_rule('/upload_folder/<filename>', 'uploaded_file',
-                 build_only=True)
+app.add_url_rule('/upload_folder/<filename>', 'uploaded_file', build_only=True)
 app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
     '/upload_folder':  app.config['UPLOAD_FOLDER']
 })
 
-@app.route('/')
-def  helpus_templat():
-    render_template()
+@app.route('/helpus')
+def helpus_template():
+    return render_template('helpus.html')
+
+@app.route('/contact')
+def contact_template():
+    return render_template('contact.html')
 
 if __name__ == "__main__":
     app.debug=False
