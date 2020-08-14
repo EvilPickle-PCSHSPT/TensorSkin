@@ -31,9 +31,9 @@ def ensemble_predict(test_data):
     test_data = np.true_divide(test_data, 255)
     test_data = np.expand_dims(test_data, axis=0)
 
-    model_1 = tf.keras.models.load_model('model/SkinFine_model_1.h5')
-    model_2 = tf.keras.models.load_model('model/SkinFine_model_2.h5')
-    model_3 = tf.keras.models.load_model('model/SkinFine_model_3.h5')
+    model_1 = tf.keras.models.load_model('model/PJ61403_model_1.h5')
+    model_2 = tf.keras.models.load_model('model/PJ61403_model_2.h5')
+    model_3 = tf.keras.models.load_model('model/PJ61403_model_3.h5')
     ans_1 = model_1.predict(test_data)
     ans_2 = model_2.predict(test_data)
     ans_3 = model_3.predict(test_data)
