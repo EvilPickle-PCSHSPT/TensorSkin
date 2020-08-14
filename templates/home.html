@@ -43,4 +43,17 @@
             <div class="hidden index">Web Application for analysing and classifying initial assessment of dermatitis. It's just as easy as taking a photo with your smartphone.</div>
         </div>
     </body>
+
+<script src="/static/app.js"></script>
+<script src="https://kit.fontawesome.com/5ce9a0dd1d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        
+        const realFileBtn = document.getElementById("real-file");
+        const customBtn = document.getElementById("custom-button");
+        const customTxt = document.getElementById("custom-text");
+        
+        customBtn.addEventListener("click", function () {
+            realFileBtn.click();
+        });
+    </script>
 </html>
