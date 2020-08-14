@@ -483,7 +483,12 @@ img.pitching-trial{
     cursor: pointer;
 }
 
-.labeling{
+.label-style{
     position: relative;
-    top:calc(30vh + 150px);
+    top: calc(31vh + 230px);
+}
+
+.cure-style{
+    position: relative;
+    top: calc(33vh + 300px)
 }
