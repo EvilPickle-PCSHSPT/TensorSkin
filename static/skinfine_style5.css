@@ -10,7 +10,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 16vh;
-    background-color: rgb(224, 113, 7);
+    background-color: rgb(225, 225, 225);
     z-index: 1;
 }
 
@@ -25,7 +25,7 @@ h3{
 }
 
 .logo{
-    color: ivory;
+    color: (0, 0, 0);
     letter-spacing: 3px;
     font-size: 28px;
     z-index: 2;
@@ -44,7 +44,7 @@ h3{
 }
 
 .nav-links a{
-    color: white;
+    color: (0, 0, 0);
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
@@ -61,7 +61,7 @@ h3{
 .burger div{
     width: 25px;
     height: 2px;
-    background-color: white;
+    background-color: (0, 0, 0);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -99,7 +99,7 @@ img.human-body-silhouette{
 }   
 
 .button{
-    background-color: white;
+    background-color: (0, 0, 0);
     border: 4px solid #000000;
     border-radius: 12px;
     color: black;
@@ -141,11 +141,11 @@ img.human-body-silhouette{
     position: relative;
     top: 5vh;
     width: 25vw;
-    border: 3px solid rgb(224, 113, 7);
+    border: 3px solid rgb(85, 26, 139);
     padding:0;
     margin: auto;
     border-radius: 10px;
-    border: 5px double rgb(224, 113, 7);
+    border: 5px double rgb(85, 26, 139);
     left: 0;
     text-align: center;
     right: 0;
@@ -158,7 +158,7 @@ img.human-body-silhouette{
     right: 0;
     text-align: center;
     top: calc(300px + 40vh);
-    border: 3px solid rgb(224, 113, 7);
+    border: 3px solid rgb(225, 225, 225);
     border-radius: 10px;
 }
 
@@ -205,7 +205,7 @@ img.pitching-trial{
     background-color: #444;
     margin-top: 0;
     margin-left: 60vw;
-    color: white;
+    color: (0, 0, 0);
     font-size: 30pt;
     padding: 25px;
 }
@@ -228,7 +228,7 @@ img.pitching-trial{
 }
 
 .first-letter-p{
-    color: rgb(224, 113, 7);
+    color: rgb(225, 225, 225);
     font-style: bold;
     float: left;
     padding-left: 5px;
@@ -332,7 +332,7 @@ img.pitching-trial{
         text-align: center;
         top: calc(40vh + 300px);
         border-radius: 10px;
-        border: 5px double rgb(224, 113, 7);
+        border: 5px double rgb(225, 225, 225);
     }
 
     .rectangle{
@@ -342,7 +342,7 @@ img.pitching-trial{
         width: 45vw;
         text-align: center;
         border-radius: 10px;
-        border: 5px double rgb(224, 113, 7);
+        border: 5px double rgb(225, 225, 225);
     }
 
     img.human-body-silhouette{
@@ -385,7 +385,7 @@ img.pitching-trial{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgb(224, 113, 7);
+        background-color: rgb(225, 225, 225);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -424,7 +424,7 @@ img.pitching-trial{
         left: 5vw;
     }
     .button{
-        background-color: white;
+        background-color: (0, 0, 0);
         border: 4px solid #000000;
         border-radius: 12px;
         color: black;
@@ -468,7 +468,7 @@ img.pitching-trial{
 .choose-file {
     
     padding: 10px; color: pink; 
-    background-color:rgb(224, 113, 7); 
+    background-color:rgb(225, 225, 225); 
     border: 1px solid #000; 
     border-radius: 5px; 
     cursor: pointer; 
@@ -477,7 +477,7 @@ img.pitching-trial{
 .upload, #custom-button {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px; color: pink; 
-    background-color:rgb(224, 113, 7); 
+    background-color:rgb(225, 225, 225); 
     border: 1px solid #000; 
     border-radius: 5px; 
     cursor: pointer;
