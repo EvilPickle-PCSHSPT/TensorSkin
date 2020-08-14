@@ -100,28 +100,18 @@ def upload_file():
             if result == 0:
                 label = 'Atopic Dermatitis'
                 cure = 'No need'
-                @app.route('/AD')
-                def ad_tem():
-                    return render_template('AD.HTML')
     
             elif result == 1:
                 label =	'Normal'
                 cure = 'No need'
-                @app.route('/AD')
-                def ad_tem():
-                    return render_template('AD.HTML')
 
             elif result == 2:
                 label = 'Psoriasis'
                 cure = '24 hours'
-                def ad_tem():
-                    return render_template('AD.HTML')
 
             elif result == 3:
                 label = 'Seborrhoeic Keratosis'
                 cure = '24 hours'
-                def ad_tem():
-                    return render_template('AD.HTML')
 
             print(result)
             print(file_path)
