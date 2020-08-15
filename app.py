@@ -99,11 +99,11 @@ def upload_file():
             result = ensemble_predict(file_path)
             if result == 0:
                 label = 'Atopic Dermatitis'
-                cure = 'Discovering'
+                cure = 'Self-healing at home'
     
             elif result == 1:
                 label =	'Normal'
-                cure = 'No need'
+                cure = 'Self-healing at home'
 
             elif result == 2:
                 label = 'Psoriasis'
