@@ -1,8 +1,8 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for
 from flask import send_from_directory
-from werkzeug import secure_filename
-from werkzeug import SharedDataMiddleware
+from werkzeug.utils import secure_filename
+from werkzeug.middleware.shared_data import SharedDataMiddleware
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
 from tensorflow.keras.models import Sequential, load_model
