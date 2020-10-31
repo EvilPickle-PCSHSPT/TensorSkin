@@ -467,7 +467,7 @@ img.pitching-trial{
 
 .choose-file {
     
-    padding: 10px; color: pink; 
+    padding: 10px; color: rgb(0, 0, 0); 
     background-color:rgb(225, 225, 225); 
     border: 1px solid #000; 
     border-radius: 5px; 
@@ -476,7 +476,7 @@ img.pitching-trial{
 
 .upload, #custom-button {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px; color: pink; 
+    padding: 10px; color: rgb(0, 0, 0); 
     background-color:rgb(225, 225, 225); 
     border: 1px solid #000; 
     border-radius: 5px; 
