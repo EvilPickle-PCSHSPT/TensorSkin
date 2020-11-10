@@ -189,6 +189,13 @@ button{
   animation: drop 1.5s ease;
 }
 
+#image-preview{
+  justify-content: center;
+  border:1px solid #000;
+  height: 336px; 
+  width: 336px;
+}
+
 .big-circle{
   position: absolute;
   top: 0px;
