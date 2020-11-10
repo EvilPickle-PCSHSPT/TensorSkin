@@ -5,14 +5,21 @@
     list-style: none;
     box-sizing: border-box;
   }
+
+.topic{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}  
   body{
     font-family: 'Quicksand', sans-serif;
   }
+
   nav{
     background: red;
     height: 120px;
     width: 100%;
   }
+
   label.logo{
     color: white;
     font-size: 50px;
@@ -20,6 +27,7 @@
     padding: 0 100px;
     font-weight: bold;
   }
+
   nav ul{
     float: right;
     margin-right: 20px;
@@ -124,6 +132,10 @@
     color: #585772;
 }
 
+.predict-text{
+  font-size: 30px;
+}
+
 .cta{
     padding: 50px 0px 0px 0px;
 }
@@ -148,6 +160,16 @@
     font-size: 25px;
     color: white;
     margin: 30px 0px 0px 30px;
+}
+
+.cta-topic{
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
 }
 
 button{
