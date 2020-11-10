@@ -49,13 +49,13 @@ def ensemble_predict(test_data):
 
     if mean_answer == 0:
         print('Label: Atopic Dermatitis')
-    elif mean_answer == 1:   
+    elif mean_answer == 1:
         print('Label: Normal')
     elif mean_answer == 2:
         print('Label: Psoriasis')
     elif mean_answer == 3:
         print('Label: Seborrhoeic Keratosis')
-        
+
     return mean_answer
 
 def my_random_string(string_length=10):
@@ -100,7 +100,7 @@ def upload_file():
             if result == 0:
                 label = 'Atopic Dermatitis'
                 cure = 'Self-healing at home'
-    
+
             elif result == 1:
                 label =	'Normal'
                 cure = 'Self-healing at home'
